@@ -21,12 +21,12 @@ jobs:
             if: github.ref == 'refs/heads/main'
             run: |
               echo 'Running in main branch'
-              mvn clean install -PcodeQuality -Dsonar.coverage.jacoco.xmlReportPaths=../app-it/target/site/jacoco/jacoco.xml sonar:sonar -Pcoverage
+              mvn clean install -PcodeQuality -Dsonar.coverage.jacoco.xmlReportPaths=../app-it/target/site/jacoco/jacoco.xml sonar:sonar
           - name: Maven Build -- Feature Branch
             if: github.ref != 'refs/heads/main'
             run: |
               echo 'Running in ${{github.ref_name}} branch'
-              mvn clean install -PcodeQuality -Dsonar.coverage.jacoco.xmlReportPaths=../app-it/target/site/jacoco/jacoco.xml sonar:sonar -Pcoverage
+              mvn clean install -PcodeQuality -Dsonar.coverage.jacoco.xmlReportPaths=../app-it/target/site/jacoco/jacoco.xml sonar:sonar
   publish-to-artifact-repositories:
       name: Publish To Nexus & OSSRH
       runs-on: ubuntu-latest
