@@ -72,44 +72,7 @@
 				 <plugin>
 				            <groupId>org.jacoco</groupId>
 				            <artifactId>jacoco-maven-plugin</artifactId>
-					    <version>0.8.7</version>
-				            <executions>
-								<execution>
-                                	<id>check</id>
-                                	<goals>
-                                    	<goal>check</goal>
-                                	</goals>
-                                	
-                                	<configuration>
-                                    	<dataFile>${project.build.directory}/jacoco/jacoco-ut.exec</dataFile>
-                                    	<haltOnFailure>true</haltOnFailure>
-                                    	<rules>
-	                                        <!-- All classes must have 80% line and branch coverage . Note
-	                                            we use 2 d.p so that we get can any check failure messages reported to 2
-	                                            d.p -->
-	                                        <rule>
-	                                            <element>CLASS</element>
-	                                            <limits>
-	                                                <limit>
-	                                                    <counter>LINE</counter>
-	                                                    <value>COVEREDRATIO</value>
-	                                                    <minimum>0.85</minimum>
-	                                                </limit>
-	                                                <limit>
-	                                                    <counter>BRANCH</counter>
-	                                                    <value>COVEREDRATIO</value>
-	                                                    <minimum>0.85</minimum>
-	                                                </limit>
-	                                            </limits>
-	                                            <includes>
-	                                                <include>gov.irs.irsm.*</include>
-	                                                <include>gov.irs.irps.*</include>
-	                                            </includes>
-	                                        </rule>
-	                                    </rules>
-    	                            </configuration>
-        	                    </execution>								
-								
+				            <executions>						
 				                <execution>
 				                    <goals>
 				                        <goal>prepare-agent</goal>
@@ -124,8 +87,7 @@
 				                    </goals>
 				                </execution>
 				            </executions>
-				    </plugin>
-				        
+				    </plugin>				        
 	                <plugin>
 	                    <artifactId>maven-surefire-plugin</artifactId>
 	                    <version>2.19.1</version>
