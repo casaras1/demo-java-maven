@@ -16,10 +16,7 @@
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-	<sonar.coverage.jacoco.xmlReportPaths>
-    		../app-it/target/site/jacoco/jacoco.xml
-  	</sonar.coverage.jacoco.xmlReportPaths>    
+        <maven.compiler.target>1.8</maven.compiler.target>  
     </properties>
 
     <licenses>
