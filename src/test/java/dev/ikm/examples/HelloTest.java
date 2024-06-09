@@ -68,5 +68,21 @@ public class HelloTest {
         assertEquals(z, 12);
 
     }	
+
+
+	@Test
+    public void testFail3() {
+		
+		String helloText = "Hello mkyong";
+
+        assertEquals("Hello mkyong", helloText);
+        
+        Hello hello = new Hello();
+        
+        int z = hello.multiply(3, 4);
+        
+        assertEquals(z, 12);
+
+    }	
 	
 }
