@@ -42,7 +42,7 @@ jobs:
               -Dsonar.junit.reportPath=target/surefire-reports/*HelloTest*.xml
               -Dsonar.java.binaries=target/classes
               -Dsonar.sources=src/main/java
-              -Dsonar.test=src/test
+              -Dsonar.test=src/test/java
                
   publish-to-artifact-repositories:
       name: Publish To Nexus & OSSRH
