@@ -9,8 +9,8 @@ on:
 
 
 jobs:
-    Testing:
-        runs-on: self-hosted
+    Testing:ubuntu-latest
+        runs-on: 
         steps:
             - name: Example Step
               run: echo "Instance is up and running!"
