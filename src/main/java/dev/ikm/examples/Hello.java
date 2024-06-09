@@ -19,5 +19,9 @@ class Hello {
     
     public float divide(int x, int y) {
     	return x/y;
-    }    
+    }   
+
+    public float2 divide(int x, int y) {
+    	return 0/y;
+    } 
 }
