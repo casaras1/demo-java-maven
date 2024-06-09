@@ -21,7 +21,7 @@ class Hello {
     	return x/y;
     }   
 
-    public float2 dividebytwo(int x, int y) {
+    public float dividebytwo(int x, int y) {
     	return (x+y)/2;
     } 
 }
