@@ -40,7 +40,7 @@ jobs:
               -Dsonar.projectKey=casaras1_demo-java-maven
               -Dsonar.coverage.jacoco.xmlReportPaths=/target/site/jacoco/jacoco.xml
               -Dsonar.junit.reportPaths=/target/surefire-reports/TEST-dev.ikm.examples.HelloTest.xml
-              -Dsonar.java.binaries=/target/classes
+              -Dsonar.java.binaries=target/classes
                
   publish-to-artifact-repositories:
       name: Publish To Nexus & OSSRH
