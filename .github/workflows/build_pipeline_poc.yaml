@@ -21,12 +21,12 @@ jobs:
             if: github.ref == 'refs/heads/main'
             run: |
               echo 'Running in main branch'
-              mvn clean install
+              mvn clean install -PcodeQuality
           - name: Maven Build -- Feature Branch
             if: github.ref != 'refs/heads/main'
             run: |
               echo 'Running in ${{github.ref_name}} branch'
-              mvn clean install
+              mvn clean install -PcodeQuality
   publish-to-artifact-repositories:
       name: Publish To Nexus & OSSRH
       runs-on: ubuntu-latest
