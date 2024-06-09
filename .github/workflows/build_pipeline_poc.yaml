@@ -37,7 +37,7 @@ jobs:
             with:
              args: >
               -Dsonar.organization=casaras1
-              -Dsonar.projectKey=demo-java-maven
+              -Dsonar.projectKey=casaras1_demo-java-maven
               -Dsonar.coverage.jacoco.xmlReportPaths=/target/site/jacoco/jacoco.xml
               -Dsonar.junit.reportPaths=/target/surefire-reports/TEST-dev.ikm.examples.HelloTest.xml		
                
