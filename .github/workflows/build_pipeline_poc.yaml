@@ -41,8 +41,8 @@ jobs:
               -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
               -Dsonar.junit.reportPath=target/surefire-reports/*HelloTest*.xml
               -Dsonar.java.binaries=target/classes
-              -Dsonar.sources=src/java/*
-              -Dsonar.tests=src/test/*
+              -Dsonar.sources=src/main/
+              -Dsonar.tests=src/test/
                
   publish-to-artifact-repositories:
       name: Publish To Nexus & OSSRH
