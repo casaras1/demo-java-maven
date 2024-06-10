@@ -81,7 +81,7 @@ public class HelloTest {
         
         int z = hello.multiply(3, 4);
         
-        assertEquals(z, 12);
+        assertEquals(z, 13);
 
     }	
 	
